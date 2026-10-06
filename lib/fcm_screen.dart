@@ -8,6 +8,7 @@ class FCMScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: const Text('FCM Notifications')),
       body: Center(
         child: ValueListenableBuilder<RemoteMessage?>(
           valueListenable: NotificationService.latestMessage,

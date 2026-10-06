@@ -11,7 +11,8 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   final notificationService = NotificationService();
-  await notificationService.initFCM();
+  const String userId = "user_123";
+  await notificationService.initFCM(userId);
   runApp(const MyApp());
 }
 
